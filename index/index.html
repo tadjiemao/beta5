@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Juego del Ahorcado</title>
+  <title>Juego del Ahorcado y Sorpresa</title>
   <link rel="stylesheet" href="css/juego_del_ahorcado_y_cumpleanos_feliz.css">	
   <script type= "text/javascript" src="js/juego_del_ahorcado_y_cumpleanos_feliz.js" defer></script>
 </head>
@@ -36,9 +36,14 @@
       <source src="sound/fracaso.wav" type="audio/wav"> <!-- Audio para el fracaso -->
     </audio>
 	
-	<video id="logroVideo" style="display: none;" width="320" height="238" controls>
+	<video id="logroVideo" style="display: none;" width="320" height="238" controls playsinline>
       <source src="img/logro.mp4" type="video/mp4"> <!-- Vídeo para reproducir tras la victoria -->
     </video>
+	
+	<!--  
+	  controls: 它告诉浏览器显示视频播放控件，包括播放、暂停、音量和进度控制等。
+	  playsinline: 它告诉浏览器在内联播放视频，而不是自动全屏播放。
+	-->
 	
    </div>
 	
